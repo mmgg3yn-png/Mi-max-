@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">IMGmiax</string>
+    <string name="app_subtitle">مدير ملفات وأدوات تحليل ملفات Android ROM</string>
+
+    <!-- Navigation -->
+    <string name="nav_home">الرئيسية</string>
+    <string name="nav_files">مدير الملفات</string>
+    <string name="nav_rom">أدوات الروم</string>
+    <string name="nav_archive">الأرشيف</string>
+    <string name="nav_more">المزيد</string>
+    <string name="nav_apk">أدوات APK</string>
+    <string name="nav_editor">محرر النصوص</string>
+    <string name="nav_hex">عارض Hex</string>
+    <string name="nav_logs">سجل العمليات</string>
+    <string name="nav_settings">الإعدادات</string>
+    <string name="nav_developer">المطور</string>
+    <string name="more_tools">الأدوات الإضافية</string>
+
+    <!-- Actions -->
+    <string name="action_open_folder">فتح مجلد التخزين</string>
+    <string name="action_select_rom">اختيار ملف ROM أو صورة قسم</string>
+    <string name="action_select_zip">اختيار ملف أرشيف ZIP</string>
+    <string name="action_select_apk">اختيار تطبيق APK</string>
+    <string name="action_select_hex">اختيار ملف للتحليل الست عشري</string>
+    <string name="action_unpack_sparse">تحويل Sparse إلى Raw (فك الضغط)</string>
+    <string name="action_cancel">إلغاء العملية</string>
+    <string name="action_save">حفظ الملف</string>
+    <string name="action_clear">مسح السجل</string>
+    <string name="action_delete">حذف</string>
+
+    <!-- Developer Page -->
+    <string name="developer_name">IMGmiax</string>
+    <string name="developer_email_label">البريد الإلكتروني:</string>
+    <string name="developer_email_val">mmgg3yn@gmail.com</string>
+    <string name="developer_telegram_label">قناة Telegram:</string>
+    <string name="developer_telegram_val">@Mi_Max12</string>
+
+    <!-- Settings -->
+    <string name="theme_setting">المظهر (Theme)</string>
+    <string name="theme_system">تلقائي حسب النظام</string>
+    <string name="theme_dark">داكن (Dark Mode)</string>
+    <string name="theme_light">فاتح (Light Mode)</string>
+    <string name="show_file_sizes">إظهار أحجام الملفات</string>
+    <string name="show_hidden_files">إظهار الملفات المخفية</string>
+</resources>
