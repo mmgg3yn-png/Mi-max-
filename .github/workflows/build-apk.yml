@@ -40,7 +40,9 @@ jobs:
           bash -x ./gradlew --version
 
       - name: Build APK
-        run: ./gradlew assembleDebug --stacktrace
+        run: |
+          chmod +x gradlew
+          ./gradlew assembleDebug --stacktrace
 
       - name: Upload APK
         if: success()
