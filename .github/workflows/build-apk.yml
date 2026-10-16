@@ -27,10 +27,20 @@ jobs:
         with:
           packages: 'platform-tools platforms;android-35 build-tools;35.0.0'
 
-      - name: Build APK
+      - name: Diagnose Java and Gradle
+        shell: bash
         run: |
-          chmod +x gradlew
-          ./gradlew assembleDebug --stacktrace
+          echo "=== Java ==="
+          java -version
+          echo "=== Relevant environment variables ==="
+          env | grep -E '^(JAVA_OPTS|GRADLE_OPTS|JAVA_TOOL_OPTIONS|JDK_JAVA_OPTIONS|_JAVA_OPTIONS|JAVA_HOME|GRADLE_USER_HOME)=' || true
+          echo "=== Gradle wrapper JVM settings ==="
+          grep -n -E 'DEFAULT_JVM_OPTS|JAVA_OPTS|JAVACMD|eval set|CLASSPATH' gradlew || true
+          echo "=== Gradle wrapper version ==="
+          bash -x ./gradlew --version
+
+      - name: Build APK
+        run: ./gradlew assembleDebug --stacktrace
 
       - name: Upload APK
         if: success()
